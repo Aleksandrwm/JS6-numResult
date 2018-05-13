@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+	<body>
+		<input id ="txtCount" type="text" name="number" placeholder="Введите число"></input>
+		<input type="button" onclick="onclickMybutton()" value="Считать"/>
+		<div id="divResult"></div>
+	</body>
+  <script>
+    function onclickMybutton() {
+		var txt = document.getElementById("txtCount");
+		var myResult = document.getElementById("divResult");
+		var val = txtCount.value;
+		var txt = parseInt(val);
+	
+		for(var i=0; i<txt; i++) {
+			myResult.textContent += ',' + i;
+			
+      }
+    }
+  </script>
+
+
+</html>
+
