@@ -15,8 +15,11 @@
 		var txt = parseInt(val);
 	
 		for(var i=0; i<txt; i++) {
-			myResult.textContent += ',' + i;
-			
+			//myResult.textContent += ',' + i;
+			if (i!=0){
+			myResult.textContent+=',';
+			}
+			myResult.textContent+=i;
       }
     }
   </script>
